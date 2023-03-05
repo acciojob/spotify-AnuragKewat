@@ -12,6 +12,7 @@ public class Song {
     public Song(String title, int length){
         this.title = title;
         this.length = length;
+        this.likes = 0;
     }
 
     public String getTitle() {
