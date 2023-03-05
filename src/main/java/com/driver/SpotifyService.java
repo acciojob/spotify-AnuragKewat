@@ -32,7 +32,7 @@ public class SpotifyService {
     }
 
     public Playlist createPlaylistOnName(String mobile, String title, List<String> songTitles) throws Exception {
-        return createPlaylistOnName(mobile, title, songTitles);
+        return spotifyRepository.createPlaylistOnName(mobile, title, songTitles);
     }
 
     public Playlist findPlaylist(String mobile, String playlistTitle) throws Exception {
