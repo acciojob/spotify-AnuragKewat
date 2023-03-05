@@ -86,13 +86,13 @@ public class SpotifyRepository {
         for(User user: users) {
             if(user.getMobile().equals(mobile)) {
                 Playlist playlist = new Playlist(title);
-                playlists.add(playlist);
                 List<Song> songList = new ArrayList<>();
                 for(Song song: songs) {
                     if(song.getLength() == length) {
                         songList.add(song);
                     }
                 }
+                playlists.add(playlist);
                 playlistSongMap.put(playlist, songList);
                 List<User> userList = new ArrayList<>();
                 userList.add(user);
